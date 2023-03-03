@@ -4,6 +4,7 @@ import numpy as np
 top_50=pd.read_pickle(open('top50.pkl', 'rb'))
 books=pd.read_pickle(open('books.pkl', 'rb'))
 pt=pd.read_pickle(open('pt.pkl', 'rb'))
+similarity=pd.read_pickle('similarity.pkl','rb'))
 app=Flask(__name__)
 @app.route('/')
 def index():
